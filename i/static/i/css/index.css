@@ -73,6 +73,33 @@ body {
   font-size: 25px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header,
+.projects-header {
+  font-size: 30px;
+}
+
+.about-text {
+  font-size: 20px;
+}
+
+.about a {
+  color:#98d0ff;
+  text-decoration: none;
+}
+
+.about a:visited {
+  color: #98d0ff;
+}
+
+.about a:active {
+  color: #98d0ff;
+}
+
 @media (max-width: 1025px) {
   .user-image {
     width: 200px;
