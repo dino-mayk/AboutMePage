@@ -4,7 +4,7 @@ about Me Page
 
 Клонируйте репозиторий:
 ```bash
-https://github.com/dino-mayk/aboutMePage
+git clone https://github.com/dino-mayk/aboutMePage.git
 ```
 
 Скачайте зависимости:

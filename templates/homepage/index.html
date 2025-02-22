@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link href="{% static 'apps/homepage/index.css' %}" rel="stylesheet">
+
+
+<aside class="sidebar">
+    <nav>
+        <ul class="sidebar-links">
+            <li>
+                <a class="sidebar-link" href="https://github.com/dino-mayk" target="_blank">
+                  <i class="bi bi-github" style="font-size: 25px; color: white;"></i>
+                </a>
+            </li>
+
+            <li>
+                <a class="sidebar-link" href="https://t.me/dino_mayk" target="_blank">
+                  <i class="bi bi-telegram" style="font-size: 25px; color: #2AABEE;"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a class="sidebar-link" href="https://discord.com/users/744502765585301545" target="_blank">
+                  <i class="bi bi-discord" style="font-size: 25px; color: #712cf9;"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+<div class="container">
+  <section class="user">
+      <div class="user-header">
+          <img class="user-image" src="{% static 'apps/homepage/i2.jpg' %}" alt="Моё фото">
+          <h4 class="user-name">Краснов Никита Алексеевич</h4>
+      </div>
+
+      <div class="user-info">
+          <div class="info-block">
+              <span class="info-title">Населенный пункт</span>
+              <span class="info-content">с. Курино</span>
+          </div>
+
+          <div class="info-block">
+              <span class="info-title">Возраст</span>
+              <span class="info-content">15 лет</span>
+          </div>
+
+          <div class="info-block">
+              <span class="info-title">Школа</span>
+              <span class="info-content">МБОУ "СОШ с Конь-Колодезь"</span>
+          </div>
+      </div>
+  </section>
+  <section class="about">
+      <h3 class="about-header">О себе</h3>
+
+      <p class="about-text">Привет! Меня зовут Никита, мне 17 лет. Живу я в селе <a href="https://yandex.ru/maps/geo/selo_kurino/53021202/?l
+        l=39.368420%2C52.194796&z=14.39" target="_blank">Курино</a>, а учусь в <a href="https://yandex.ru/maps/org/mbou_sosh_sela_kon_
+        kolodez/24720493994/?ll=39.166075%2C52.140461&mode=search&sctx=ZAAAAAgBEAAaKAoSCYttUtFYr0NAEclZ2NMOGUpAEhIJFeY9zjRhoz8RIsSVs3dGiz8iB
+        gABAgMEBSgKOABA%2BfUISAFiJHJlbGV2X2JpZ19hdXRvc2NhbGVfbGltaXRfcnVicmljPTEwMGIccmVsZXZfYXV0b3NjYWxlX3N3YXBfZXF1YWw9MWIkcmVsZXZfYmlnX2F
+        1dG9zY2FsZV9mYWN0b3JfcnVicmljPTE2YhdyZWxldl9taW5yZXNfcnVicmljPTEwMGIgcmVsZXZfcnVicmljX2V4dHJhX2F1dG9zY2FsaW5nPTFiK3JlYXJyPXNjaGVtZV9
+        Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnJ1nQHNzEw9oAEAqAEAvQHbtNs7wgEFqpvTi1zqAQDyAQD4AQCCAiTQmtC%2B0L3RjC3QmtC%2B0LvQvtC00LXQt9G
+        MINGI0LrQvtC70LCKAgCSAgYxNDYxNjmaAgxkZXNrdG9wLW1hcHM%3D&sll=39.166075%2C52.140461&sspn=0.007171%2C0.002526&text=%D0%9A%D0%BE%D0%BD%D
+        1%8C-%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D0%B7%D1%8C%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0&z=17.4" target="_blank">МБОУ "СОШ села 
+        Конь-Колодезь".</a>
+      </p>
+      
+      <p class="about-text">
+        В свободное от учебы время я люблю играть в видеоигры, смотреть фильмы, слушать музыку. Так же в ряд моих увлечений входит 
+        программирование с которым я познакомился в 
+        <a href="https://lyceum.yandex.ru/certificate/check/?certNumber=220252419&lastName=%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B2" 
+        target="_blank">Лицее Академии Яндекса</a> ещё в седьмом классе по предложению моего школьного учителя информатики.
+      </p>
+
+      <p class="about-text">На данный момент все мои самые удачные проекты были написаны в Яндекс Лицее. Их список вы можете посмотреть ниже.
+      </p>
+  </section>
+  <section class="projects">
+      <h3 class="projects-header">Проекты</h3>
+
+      <div class="projects-content">
+          <article class="project">
+              <h2 class="project-header">
+                  <a href="https://github.com/dino-mayk/HomeCooking" target="_blank">HomeCooking</a>
+              </h2>
+              <img class="project-img" src="{% static 'apps/homepage/homecooking.png' %}" alt="homecooking">
+              <p class="project-about">Сайт для придорожного кафе</p>
+              <div class="project-links"></div>
+          </article>
+
+          <article class="project">
+              <h2 class="project-header">
+                  <a href="https://github.com/dino-mayk/SuperBird" target="_blank">SuperBird</a>
+              </h2>
+              <img class="project-img" src="{% static 'apps/homepage/superbird.png' %}" alt="superbird">
+              <p class="project-about">Игра по типу Flappy Bird</p>
+              <div class="project-links"></div>
+          </article>
+
+          <article class="project">
+              <h2 class="project-header">
+                  <a href="https://github.com/dino-mayk/MyHealth" target="_blank">MyHealth</a>
+              </h2>
+              <img class="project-img" src="{% static 'apps/homepage/myhealth.png' %}" alt="myhealth">
+              <p class="project-about">Приложение для поддержки здорового образа жизни</p>
+              <div class="project-links"></div>
+          </article>
+      </div>
+  </section>
+</div>
+
+{% endblock %}
